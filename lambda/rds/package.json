@@ -1,0 +1,7 @@
+{
+  "name": "AWS-RDS",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^6.4.1"
+  }
+}
