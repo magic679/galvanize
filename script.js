@@ -16,7 +16,7 @@ var nodes = d3.range(200).map(function() {return {radius: Math.random() * 12+4};
     color = d3.scale.category10();
 
 // Attaching to jared's code.
-window.managers.mapWorkspace(svg, width, height);
+window.managers.mapWorkspace(svg, circle, width, height);
 window.managers.doorBuilder();
   
 function move(x, y) {

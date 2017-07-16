@@ -1,4 +1,4 @@
-[
+fakenews = [
     {
         "name": "International Institute for the Unification of Private Law ",
     	"cost": 55411025.42

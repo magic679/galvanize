@@ -1,8 +1,9 @@
 (function (window) {
   managers = {
     // Ties this object to the workspace by passing in the D3 svg canvas
-    mapWorkspace: function(target, width, height){
+    mapWorkspace: function(target, circle, width, height){
       this.container = target;
+      this.circle = circle;
       this.doorAlignment(width);
     },
     // Puts the door together
@@ -29,8 +30,9 @@
     // Randomly selects a value from an array
     arraySelector: function (arr) {
       min = Math.ceil(0);
-      max = Math.floor(99);
+      max = Math.floor(74);      
       i = Math.floor(Math.random() * (max - min)) + min;
+      console.log(i);
       return arr[i];
     },
     // Resets the doors, removing them from the DOM as well as this object before rebuilding them
@@ -43,6 +45,10 @@
       this.doorBuilder();
       console.log("rebuilt");
     },
+    collisionDetector: function(){
+      return this.circle.getAttribute;
+    },
+    circle: null,
     container: null,
     doors: [],
     doorsCoordinates: [],
